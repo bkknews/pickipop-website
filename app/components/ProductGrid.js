@@ -46,7 +46,7 @@ export default function ProductGrid({ products }) {
               <div className="product-img-wrap">
                 <Image
                   src={p.image_url || 'https://placehold.co/400x400/FFE4DC/FF8B6A?text=Pickipop'}
-                  alt={p.name}
+                  alt={`${p.name}${p.brand ? ' ' + p.brand : ''} | ${p.category === 'skincare' ? 'สกินแคร์' : p.category === 'fashion' ? 'แฟชั่น' : p.category === 'food' ? 'อาหาร' : 'สินค้า'} | Pickipop`}
                   fill
                   sizes="(max-width: 600px) 50vw, (max-width: 1200px) 33vw, 25vw"
                   style={{ objectFit: 'cover', transition: 'transform 0.3s' }}

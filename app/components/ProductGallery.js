@@ -10,7 +10,7 @@ export default function ProductGallery({ images, name, badge }) {
       <div className="main-img-wrap">
         <Image
           src={images[current]}
-          alt={name}
+          alt={`${name} - รูปภาพสินค้า | Pickipop`}
           fill
           priority
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -29,7 +29,7 @@ export default function ProductGallery({ images, name, badge }) {
             >
               <Image
                 src={img}
-                alt={`${name} ${i + 1}`}
+                alt={`${name} รูปที่ ${i + 1} | Pickipop`}
                 fill
                 sizes="72px"
                 style={{ objectFit: 'cover' }}
