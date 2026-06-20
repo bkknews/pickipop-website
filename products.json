@@ -179,6 +179,59 @@
     "source_url": "https://www.amazon.co.jp/dp/B0CSST4L2G"
   },
   {
+    "id": "wiggle-wiggle-floor-mat-forest",
+    "name": "พรม Wiggle Wiggle Folding Cart - SMILE WE LOVE",
+    "brand": "Wiggle Wiggle",
+    "category": "other",
+    "price": "590",
+    "shipping": "0",
+    "deadline": "",
+    "arrival": "",
+    "badge": "ใหม่",
+    "image_url": "https://res.cloudinary.com/dzcbhmgjl/image/upload/v1781972546/carpet_zbodzn.jpg",
+    "images": [
+      "https://res.cloudinary.com/dzcbhmgjl/image/upload/v1781972546/carpet_zbodzn.jpg"
+    ],
+    "active": "true",
+    "description": [
+      "พรมเช็ดเท้าดีไซน์น่ารัก ลาย Forest สไตล์ Wiggle Wiggle",
+      "เนื้อผ้านุ่มสบายเท้า ดูดซับน้ำได้ดี",
+      "เหมาะสำหรับวางหน้าประตู ห้องน้ำ ห้องนอน หรือห้องครัว",
+      "ลายดอกไม้ยิ้มสีสันสดใส เพิ่มความน่ารักให้ทุกมุมบ้าน",
+      "ของแท้ 100% จากเกาหลี"
+    ],
+    "made_in": "KOREA",
+    "source_url": "https://wiggle-wiggle.com/product/detail.html?product_no=2008&cate_no=332&display_group=1"
+  },
+  {
+    "id": "wiggle-wiggle-folding-cart",
+    "name": "Wiggle Wiggle Folding Cart - SMILE WE LOVE",
+    "brand": "Wiggle Wiggle",
+    "category": "other",
+    "price": "1890",
+    "shipping": "0",
+    "deadline": "",
+    "arrival": "",
+    "badge": "ใหม่",
+    "image_url": "https://res.cloudinary.com/dzcbhmgjl/image/upload/v1781972444/photo_2569-06-20_23.19.26_ppsr8w.jpg",
+    "images": [
+      "https://res.cloudinary.com/dzcbhmgjl/image/upload/v1781972444/photo_2569-06-20_23.19.26_ppsr8w.jpg"
+    ],
+    "active": "true",
+    "description": [
+      "รถเข็นอเนกประสงค์พับได้ ดีไซน์น่ารักลายดอกไม้ยิ้ม สไตล์ Wiggle Wiggle",
+      "พับเก็บได้แบนราบ ประหยัดพื้นที่ พกพาสะดวก",
+      "รับน้ำหนักได้มากถึง 30 kg",
+      "ล้อแข็งแรง หมุนลื่น เคลื่อนที่ง่าย",
+      "วัสดุคุณภาพดี ทนทาน ใช้งานได้นาน",
+      "เหมาะสำหรับช้อปปิ้ง กิจกรรมกลางแจ้ง แคมป์ปิ้ง และขนของ",
+      "ขนาด (กางออก): กว้าง 39 × ลึก 36.5 × สูง 42 cm",
+      "ขนาด (พับเก็บ): กว้าง 39 × ลึก 9 × สูง 42 cm"
+    ],
+    "made_in": "KOREA",
+    "source_url": "https://m.wiggle-wiggle.com/product/detail.html?product_no=2238&cate_no=1&display_group=2"
+  },
+  {
     "id": "human-made-graphic-tshirt",
     "name": "Human Made Graphic T-Shirt",
     "brand": "Human Made",
