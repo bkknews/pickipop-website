@@ -1,5 +1,31 @@
 [
   {
+    "id": "moa-fruit-vegetable-washer",
+    "name": "MOA เครื่องล้างผักและผลไม้ไร้สาย V2",
+    "brand": "MOA",
+    "category": "other",
+    "price": "2950",
+    "shipping": "0",
+    "deadline": "",
+    "arrival": "",
+    "badge": "ใหม่",
+    "image_url": "https://res.cloudinary.com/dzcbhmgjl/image/upload/v1782107157/fruitclean_qhkrp8.jpg",
+    "images": [
+      "https://res.cloudinary.com/dzcbhmgjl/image/upload/v1782107157/fruitclean_qhkrp8.jpg"
+    ],
+    "active": "true",
+    "description": [
+      "เครื่องล้างผักและผลไม้ไร้สาย ใช้น้ำเพียงอย่างเดียว ไม่ต้องใช้สารเคมีใดๆ",
+      "กำจัดยาฆ่าแมลงตกค้างได้สูงสุด 99.9%",
+      "ฆ่าเชื้อแบคทีเรียที่เป็นอันตราย 99.9%",
+      "ผ่านการทดสอบและรับรองประสิทธิภาพและความปลอดภัยอย่างเป็นทางการ",
+      "เหมาะสำหรับล้างผัก ผลไม้ อาหารเด็ก และของใช้ทั่วไป",
+      "ใช้งานง่าย ไร้สาย พกพาสะดวก"
+    ],
+    "made_in": "KOREA",
+    "source_url": "https://m.m-oa.kr/product/detail.html?product_no=98&cate_no=1&display_group=4"
+  },
+  {
     "id": "wiggle-wiggle-floor-mat-forest",
     "name": "พรม Wiggle Wiggle Folding Cart - SMILE WE LOVE",
     "brand": "Wiggle Wiggle",
