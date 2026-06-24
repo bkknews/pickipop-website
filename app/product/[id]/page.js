@@ -14,11 +14,12 @@ export async function generateMetadata({ params }) {
   if (!p) return {};
 
   const desc = `${p.name}${p.brand ? ' | ' + p.brand : ''} ราคา ${Number(p.price).toLocaleString()} บาท${p.description?.length ? ' | ' + p.description[0] : ''} | สั่งซื้อได้ที่ Pickipop`;
+  const seoTitle = p.seo_title || p.name;
   const url = `https://www.pickipop.com/product/${p.id}`;
   const images = p.images?.length ? p.images : [p.image_url];
 
   return {
-    title: p.name,
+    title: seoTitle,
     description: desc,
     alternates: { canonical: url },
     openGraph: {
@@ -86,7 +87,9 @@ export default function ProductPage({ params }) {
           <div className="product-name-lg">{p.name}</div>
 
           <div>
-            <div className="product-price-lg">{Number(p.price).toLocaleString()} ฿</div>
+            <div className="product-price-lg">
+              {Number(p.price).toLocaleString()} ฿{p.price_unit && <span className="product-price-unit"> / {p.price_unit}</span>}
+            </div>
             <div className="product-price-note">ราคารวมทุกอย่างแล้ว ไม่มีค่าส่งเพิ่ม</div>
           </div>
 
@@ -151,6 +154,37 @@ export default function ProductPage({ params }) {
                 <div className="model-info">{p.model_info.join(' · ')}</div>
               )}
             </div>
+          )}
+
+          {p.how_to_use?.length > 0 && (
+            <>
+              <div className="divider" />
+              <div className="info-row">
+                <div className="info-label">วิธีใช้</div>
+                <ol className="desc-list how-to-use-list">
+                  {p.how_to_use.map((step, i) => <li key={i}>{step}</li>)}
+                </ol>
+              </div>
+            </>
+          )}
+
+          {p.variants?.length > 0 && (
+            <>
+              <div className="divider" />
+              <div className="info-row">
+                <div className="info-label">เปรียบเทียบทุกสูตร BIODANCE Real Deep Mask</div>
+                <div className="variants-grid">
+                  {p.variants.map((v, i) => (
+                    <div key={i} className={`variant-card${v.tag ? ' variant-card--highlight' : ''}`}>
+                      <div className="variant-name">{v.name}{v.tag && <span className="variant-tag">{v.tag}</span>}</div>
+                      <div className="variant-row"><span className="variant-key">เหมาะกับ</span><span>{v.for}</span></div>
+                      <div className="variant-row"><span className="variant-key">ส่วนผสมหลัก</span><span>{v.key_ingredient}</span></div>
+                      <div className="variant-row"><span className="variant-key">ผลลัพธ์</span><span>{v.effect}</span></div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </>
           )}
 
           <div className="divider" />

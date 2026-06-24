@@ -465,6 +465,7 @@ footer a { color: var(--coral); text-decoration: none; font-weight: 600; }
 }
 
 .product-price-note { font-size: 13px; color: var(--text-light); margin-top: 2px; }
+.product-price-unit { font-size: 20px; font-weight: 500; color: var(--text-mid); }
 
 .info-row { display: flex; flex-direction: column; gap: 8px; }
 
@@ -574,6 +575,93 @@ footer a { color: var(--coral); text-decoration: none; font-weight: 600; }
 }
 
 .cta-note { font-size: 13px; color: var(--text-light); text-align: center; }
+
+/* ── HOW TO USE LIST ── */
+.how-to-use-list { list-style: none; counter-reset: step-counter; display: flex; flex-direction: column; gap: 8px; }
+
+.how-to-use-list li {
+  font-size: 15px;
+  color: var(--text-mid);
+  padding-left: 36px;
+  position: relative;
+  counter-increment: step-counter;
+}
+
+.how-to-use-list li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: var(--coral);
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── VARIANTS GRID ── */
+.variants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.variant-card {
+  background: var(--light-peach);
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 2px solid transparent;
+}
+
+.variant-card--highlight {
+  border-color: var(--coral);
+  background: white;
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.variant-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.variant-tag {
+  font-size: 11px;
+  background: var(--coral);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.variant-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+  color: var(--text-mid);
+}
+
+.variant-key {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
