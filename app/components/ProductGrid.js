@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -15,10 +15,24 @@ const CATS = [
 
 export default function ProductGrid({ products }) {
   const [cat, setCat] = useState('all');
+  const [brand, setBrand] = useState('all');
 
-  const filtered = cat === 'all'
-    ? products
-    : products.filter(p => p.category === cat);
+  const brands = useMemo(() => {
+    const seen = new Set();
+    const list = [];
+    for (const p of products) {
+      if (p.brand && !seen.has(p.brand)) {
+        seen.add(p.brand);
+        list.push(p.brand);
+      }
+    }
+    return list;
+  }, [products]);
+
+  const filtered = products.filter(p =>
+    (cat === 'all' || p.category === cat) &&
+    (brand === 'all' || p.brand === brand)
+  );
 
   return (
     <>
@@ -27,9 +41,28 @@ export default function ProductGrid({ products }) {
           <button
             key={c.key}
             className={`filter-btn${cat === c.key ? ' active' : ''}`}
-            onClick={() => setCat(c.key)}
+            onClick={() => { setCat(c.key); setBrand('all'); }}
           >
             {c.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="filter-wrap filter-wrap--brand">
+        <span className="filter-brand-label">แบรนด์</span>
+        <button
+          className={`filter-btn filter-btn--brand${brand === 'all' ? ' active' : ''}`}
+          onClick={() => setBrand('all')}
+        >
+          ทั้งหมด
+        </button>
+        {brands.map(b => (
+          <button
+            key={b}
+            className={`filter-btn filter-btn--brand${brand === b ? ' active' : ''}`}
+            onClick={() => { setBrand(b); setCat('all'); }}
+          >
+            {b}
           </button>
         ))}
       </div>
