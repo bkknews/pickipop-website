@@ -217,7 +217,10 @@
     "badge": "ใหม่",
     "image_url": "https://m.wiggle-wiggle.com/web/product/big/202406/d4343fa5fb24824e05ddefa8c10a0ede.jpg",
     "images": [
-      "https://m.wiggle-wiggle.com/web/product/big/202406/d4343fa5fb24824e05ddefa8c10a0ede.jpg"
+      "https://m.wiggle-wiggle.com/web/product/big/202406/d4343fa5fb24824e05ddefa8c10a0ede.jpg",
+      "https://m.wiggle-wiggle.com/web/product/extra/small/202406/52c3ff5c70d4f5fa8425de262f3c7d99.jpg",
+      "https://m.wiggle-wiggle.com/web/product/extra/small/202406/3c5bf89d3cc6560fcf66a5120615e250.jpg",
+      "https://m.wiggle-wiggle.com/web/product/extra/small/202406/f3c2a1d85f62606cbe15055e9b7cf04a.jpg"
     ],
     "active": "true",
     "description": [
@@ -250,7 +253,9 @@
     "badge": "ใหม่",
     "image_url": "https://www.wiggle-wiggle.com/web/product/big/202501/13b25e86c0706e807e3edbbd17a71c91.jpg",
     "images": [
-      "https://www.wiggle-wiggle.com/web/product/big/202501/13b25e86c0706e807e3edbbd17a71c91.jpg"
+      "https://www.wiggle-wiggle.com/web/product/big/202501/13b25e86c0706e807e3edbbd17a71c91.jpg",
+      "https://m.wiggle-wiggle.com/web/product/extra/small/202501/bbb354d4707b7e9f3bf40907fa506933.jpg",
+      "https://m.wiggle-wiggle.com/web/product/extra/small/202501/8bb187b6aefe23ed61e66789d3b1f8ac.jpg"
     ],
     "active": "true",
     "description": [
