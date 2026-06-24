@@ -10,13 +10,13 @@
     "deadline": "",
     "arrival": "",
     "badge": "ใหม่",
-    "image_url": "https://www.wiggle-wiggle.com/web/product/big/202507/cf31f3781172f81a1b1e6ac886b99048.png",
+    "image_url": "https://www.wiggle-wiggle.com/web/product/small/202507/cf31f3781172f81a1b1e6ac886b99048.png",
     "images": [
-      "https://www.wiggle-wiggle.com/web/product/big/202507/cf31f3781172f81a1b1e6ac886b99048.png",
-      "https://www.wiggle-wiggle.com/web/product/extra/big/202507/45a5591fbd32ea37ce03e5d7886ec0fe.png",
-      "https://www.wiggle-wiggle.com/web/product/extra/big/202507/03929255020b92683ac572defb5efaa2.png",
-      "https://www.wiggle-wiggle.com/web/product/extra/big/202507/309139199c36426cd49732f18028e5cf.jpg",
-      "https://www.wiggle-wiggle.com/web/product/extra/big/202507/227ccef3eaf8c2c832c83b10f70fafca.jpg"
+      "https://www.wiggle-wiggle.com/web/product/small/202507/cf31f3781172f81a1b1e6ac886b99048.png",
+      "https://www.wiggle-wiggle.com/web/product/extra/small/202507/45a5591fbd32ea37ce03e5d7886ec0fe.png",
+      "https://www.wiggle-wiggle.com/web/product/extra/small/202507/03929255020b92683ac572defb5efaa2.png",
+      "https://www.wiggle-wiggle.com/web/product/extra/small/202507/309139199c36426cd49732f18028e5cf.jpg",
+      "https://www.wiggle-wiggle.com/web/product/extra/small/202507/227ccef3eaf8c2c832c83b10f70fafca.jpg"
     ],
     "active": "true",
     "description": [
@@ -70,9 +70,9 @@
     "deadline": "",
     "arrival": "",
     "badge": "ใหม่",
-    "image_url": "https://www.wiggle-wiggle.com/web/product/big/202411/6150934ee583923676eeda75b5fd8e99.jpg",
+    "image_url": "https://www.wiggle-wiggle.com/web/product/small/202411/6150934ee583923676eeda75b5fd8e99.jpg",
     "images": [
-      "https://www.wiggle-wiggle.com/web/product/big/202411/6150934ee583923676eeda75b5fd8e99.jpg",
+      "https://www.wiggle-wiggle.com/web/product/small/202411/6150934ee583923676eeda75b5fd8e99.jpg",
       "https://www.wiggle-wiggle.com/web/product/extra/big/202410/1eeb2a58ccdaff53c6e42f190f32d3a2.jpg",
       "https://www.wiggle-wiggle.com/web/product/extra/big/202410/afc3460c5442b45e97487c697c7be0a4.jpg"
     ],
