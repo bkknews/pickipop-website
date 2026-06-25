@@ -31,6 +31,9 @@ export const metadata = {
     type: 'website',
   },
   twitter: { card: 'summary_large_image' },
+  verification: {
+    google: 'YtswhUD1ovZTYiJXsdgBjyQgQQrPkj9anEeq32',
+  },
 };
 
 const LINE_URL = 'https://line.me/ti/g2/xVjCTMP0kt9Nc64Nx1zXCM6TQCftgkxeypmqCg';
