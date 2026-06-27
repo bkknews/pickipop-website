@@ -5,6 +5,7 @@ const nextConfig = {
       { protocol: 'https', hostname: 'res.cloudinary.com' },
       { protocol: 'https', hostname: 'placehold.co' },
       { protocol: 'https', hostname: 'image.oliveyoung.co.kr' },
+      { protocol: 'https', hostname: 'wiggle-wiggle.com' },
       { protocol: 'https', hostname: 'www.wiggle-wiggle.com' },
       { protocol: 'https', hostname: 'm.wiggle-wiggle.com' },
     ],
