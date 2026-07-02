@@ -7,8 +7,8 @@ export const metadata = {
   alternates: { canonical: 'https://www.pickipop.com/' },
   openGraph: {
     url: 'https://www.pickipop.com/',
-    title: 'Pickipop Shopping | พรีออเดอร์สินค้าเกาหลี/ญี่ปุ่น',
-    description: 'รับพรีออเดอร์สินค้าเกาหลี/ญี่ปุ่น สกินแคร์ แฟชั่น อาหาร ราคาดี ส่งตรงจากต้นทาง',
+    title: 'Pickipop Shopping | Wiggle Wiggle ของแท้ + สกินแคร์เกาหลี',
+    description: 'ร้าน Wiggle Wiggle ของแท้ 100% พร้อมสกินแคร์เกาหลี (MEDICUBE, BIODANCE) และแฟชั่นเกาหลี/ญี่ปุ่น ราคาดี ส่งตรงจากต้นทาง',
   },
 };
 
@@ -24,7 +24,7 @@ export default function HomePage() {
             '@context': 'https://schema.org',
             '@type': 'OnlineStore',
             name: 'Pickipop Shopping',
-            description: 'รับพรีออเดอร์สินค้าเกาหลี/ญี่ปุ่น สกินแคร์ แฟชั่น อาหาร',
+            description: 'ร้าน Wiggle Wiggle ของแท้ 100% พร้อมสกินแคร์เกาหลี (MEDICUBE, BIODANCE) และแฟชั่นเกาหลี/ญี่ปุ่น',
             url: 'https://www.pickipop.com/',
             contactPoint: {
               '@type': 'ContactPoint',
@@ -38,10 +38,10 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-badge">🇰🇷🇯🇵 ส่งตรงจากเกาหลี/ญี่ปุ่น</div>
         <h1>
-          พรีออเดอร์สินค้าเกาหลี/ญี่ปุ่น<br />
+          Wiggle Wiggle ของแท้ + สกินแคร์เกาหลี<br />
           <span>ราคาดี ของแท้ 100%</span>
         </h1>
-        <p>สกินแคร์ แฟชั่น อาหาร และอีกมากมาย สั่งง่าย แค่แชทใน LINE</p>
+        <p>Wiggle Wiggle, MEDICUBE, BIODANCE และแฟชั่นเกาหลี/ญี่ปุ่น สั่งง่าย แค่แชทใน LINE</p>
         <a className="hero-btn" href={LINE_URL} target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
             <path d="M12 2C6.48 2 2 6.04 2 11c0 3.31 1.86 6.22 4.67 7.94L6 22l3.5-1.5c.79.22 1.62.34 2.5.34 5.52 0 10-4.04 10-9S17.52 2 12 2z"/>
@@ -83,7 +83,7 @@ export default function HomePage() {
       <footer>
         <div className="footer-logo">Pickipop Shopping</div>
         <p>
-          พรีออเดอร์สินค้าเกาหลี/ญี่ปุ่น ของแท้ 100% ส่งตรงจากต้นทาง<br />
+          Wiggle Wiggle ของแท้ 100% สกินแคร์เกาหลี แฟชั่นเกาหลี/ญี่ปุ่น ส่งตรงจากต้นทาง<br />
           <a href={LINE_URL} target="_blank" rel="noopener">LINE OpenChat</a>
           {' | '}
           © 2025 Pickipop Shopping

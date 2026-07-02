@@ -43,6 +43,9 @@ export default function ProductPage({ params }) {
 
   const images = p.images?.length ? p.images : [p.image_url];
   const url = `https://www.pickipop.com/product/${p.id}`;
+  const shareText = `${p.name}${p.brand ? ' | ' + p.brand : ''} ที่ Pickipop`;
+  const lineShareUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText)}`;
+  const fbShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
 
   const jsonLd = {
     '@context': 'https://schema.org/',
@@ -197,6 +200,22 @@ export default function ProductPage({ params }) {
               สั่งซื้อผ่าน LINE OpenChat
             </a>
             <div className="cta-note">แจ้งชื่อสินค้า รุ่น และไซส์ที่ต้องการในแชท</div>
+          </div>
+
+          <div className="share-wrap">
+            <span className="share-label">แชร์สินค้านี้</span>
+            <a className="share-btn share-btn--line" href={lineShareUrl} target="_blank" rel="noopener" aria-label="แชร์ผ่าน LINE">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M12 2C6.48 2 2 6.04 2 11c0 3.31 1.86 6.22 4.67 7.94L6 22l3.5-1.5c.79.22 1.62.34 2.5.34 5.52 0 10-4.04 10-9S17.52 2 12 2z"/>
+              </svg>
+              LINE
+            </a>
+            <a className="share-btn share-btn--fb" href={fbShareUrl} target="_blank" rel="noopener" aria-label="แชร์ผ่าน Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99C18.34 21.13 22 16.99 22 12z"/>
+              </svg>
+              Facebook
+            </a>
           </div>
         </div>
       </div>

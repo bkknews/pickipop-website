@@ -23,11 +23,11 @@ const notoSansThai = Noto_Sans_Thai({
 export const metadata = {
   metadataBase: new URL('https://www.pickipop.com'),
   title: {
-    default: 'Pickipop Shopping | พรีออเดอร์สินค้าเกาหลี/ญี่ปุ่น ราคาดี ของแท้ 100%',
+    default: 'Pickipop Shopping | Wiggle Wiggle ของแท้ 100% + สกินแคร์เกาหลี ราคาดี',
     template: '%s — Pickipop Shopping',
   },
-  description: 'Pickipop Shopping รับพรีออเดอร์สินค้าเกาหลี/ญี่ปุ่น สกินแคร์ แฟชั่น อาหาร ราคาถูก ส่งตรงจากต้นทาง สั่งง่ายผ่าน LINE',
-  keywords: ['พรีออเดอร์เกาหลี', 'พรีออเดอร์ญี่ปุ่น', 'สินค้าเกาหลี', 'สินค้าญี่ปุ่น', 'สกินแคร์เกาหลี', 'แฟชั่นเกาหลี', 'Pickipop'],
+  description: 'Pickipop Shopping ร้าน Wiggle Wiggle ของแท้ 100% พร้อมสกินแคร์เกาหลี (MEDICUBE, BIODANCE) และแฟชั่นเกาหลี/ญี่ปุ่น ส่งตรงจากต้นทาง สั่งง่ายผ่าน LINE',
+  keywords: ['wiggle wiggle', 'wiggle wiggle ไทย', 'wiggle wiggle ของแท้', 'พรีออเดอร์เกาหลี', 'สกินแคร์เกาหลี', 'medicube', 'biodance', 'แฟชั่นเกาหลี', 'Pickipop'],
   openGraph: {
     siteName: 'Pickipop Shopping',
     locale: 'th_TH',
