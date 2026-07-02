@@ -1,7 +1,10 @@
 import { Kanit, Noto_Sans_Thai } from 'next/font/google';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import './globals.css';
+
+const GA_ID = 'G-9SRZTT3KCH';
 
 const kanit = Kanit({
   subsets: ['thai', 'latin'],
@@ -41,6 +44,15 @@ const LINE_URL = 'https://line.me/ti/g2/xVjCTMP0kt9Nc64Nx1zXCM6TQCftgkxeypmqCg';
 export default function RootLayout({ children }) {
   return (
     <html lang="th" className={`${kanit.variable} ${notoSansThai.variable}`}>
+      <head>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="ga4" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}');
+        `}</Script>
+      </head>
       <body>
         <nav>
           <Link className="nav-logo" href="/">
